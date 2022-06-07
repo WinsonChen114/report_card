@@ -59,7 +59,19 @@ const gpaPointsLookup = {
  * QUERY SELECTORS VARIABLES GO HERE
  */
 const dropdownEl = document.querySelector(".dropdown")
-
+const studentName = document.querySelector("#student-name")
+const studentAdvisor = document.querySelector("#student-advisor")
+const studentMajor = document.querySelector("#student-major")
+const studentGradeLevel = document.querySelector("#student-grade-level")
+const studentGraduationYear = document.querySelector("#student-graduation-year")
+const studentImage = document.querySelector("#student-image")
+const semesterDropdown = document.querySelector(".semester-dropdown")
+const dropdownButton = document.querySelector(".dropdown-button")
+const dropdownLabel = document.querySelector(".dropdown-label")
+const fallSemester = document.querySelector("#fall-semester")
+const springSemester = document.querySelector("#spring-semester")
+const winterSemester = document.querySelector("#winter-semester")
+const reportCardTable = document.querySelector("#report-card-table")
 // ADD more query selectors here
 
 /**
