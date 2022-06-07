@@ -59,19 +59,19 @@ const gpaPointsLookup = {
  * QUERY SELECTORS VARIABLES GO HERE
  */
 const dropdownEl = document.querySelector(".dropdown")
-const studentName = document.querySelector("#student-name")
-const studentAdvisor = document.querySelector("#student-advisor")
-const studentMajor = document.querySelector("#student-major")
-const studentGradeLevel = document.querySelector("#student-grade-level")
-const studentGraduationYear = document.querySelector("#student-graduation-year")
-const studentImage = document.querySelector("#student-image")
-const semesterDropdown = document.querySelector(".semester-dropdown")
-const dropdownButton = document.querySelector(".dropdown-button")
-const dropdownLabel = document.querySelector(".dropdown-label")
-const fallSemester = document.querySelector("#fall-semester")
-const springSemester = document.querySelector("#spring-semester")
-const winterSemester = document.querySelector("#winter-semester")
-const reportCardTable = document.querySelector("#report-card-table")
+const studentNameQS = document.querySelector("#student-name")
+const studentAdvisorQS = document.querySelector("#student-advisor")
+const studentMajorQS = document.querySelector("#student-major")
+const studentGradeLevelQS = document.querySelector("#student-grade-level")
+const studentGraduationYearQS = document.querySelector("#student-graduation-year")
+const studentImageQS = document.querySelector("#student-image")
+const semesterDropdownQS = document.querySelector(".semester-dropdown")
+const dropdownButtonQS = document.querySelector(".dropdown-button")
+const dropdownLabelQS = document.querySelector(".dropdown-label")
+const fallSemesterQS = document.querySelector("#fall-semester")
+const springSemesterQS = document.querySelector("#spring-semester")
+const winterSemesterQS = document.querySelector("#winter-semester")
+const reportCardTableQS = document.querySelector("#report-card-table")
 // ADD more query selectors here
 
 /**
@@ -84,7 +84,7 @@ const reportCardTable = document.querySelector("#report-card-table")
  * @param {String} studentName - the name of the student
  */
 function updateStudentName(studentName) {
-  // code goes here
+  studentNameQS.innerHTML = studentName
 }
 
 /**
@@ -93,7 +93,7 @@ function updateStudentName(studentName) {
  * @param {String|Number} studentGradeLevel - the grade level of the student
  */
 function updateStudentGradeLevel(studentGradeLevel) {
-  // code goes here
+  studentGradeLevelQS.innerHTML = studentGradeLevel
 }
 
 /**
@@ -102,7 +102,7 @@ function updateStudentGradeLevel(studentGradeLevel) {
  * @param {String} studentAdvisor - the advisor of the student
  */
 function updateStudentAdvisor(studentAdvisor) {
-  // code goes here
+  studentAdvisorQS.innerHTML = studentAdvisor
 }
 
 /**
@@ -111,7 +111,7 @@ function updateStudentAdvisor(studentAdvisor) {
  * @param {String} studentMajor - the major of the student
  */
 function updateMajor(studentMajor) {
-  // code goes here
+  studentMajorQS.innerHTML = studentMajor
 }
 
 /**
@@ -120,7 +120,7 @@ function updateMajor(studentMajor) {
  * @param {Number} graduationyear - the year the student graduates
  */
 function updateStudentGraduationYear(graduationYear) {
-  // code goes here
+  studentGraduationYearQS.innerHTML = graduationYear
 }
 
 /**
@@ -130,7 +130,7 @@ function updateStudentGraduationYear(graduationYear) {
  * @param {String} url - a link to an image
  */
 function updateStudentImage(imageUrl) {
-  // code goes here
+  studentImageQS.src = imageUrl
 }
 
 /**
@@ -284,4 +284,5 @@ function calculateSemesterGpa(reportCardTableElement) {
 
 window.onload = function () {
   // execute your functions here to make sure they run as soon as the page loads
+  populateStudentInfo(studentInformation)
 }
